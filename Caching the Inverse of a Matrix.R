@@ -1,3 +1,9 @@
+# Programming-Assignment2
+## The function below will be used to check the inverse of the matrix
+## If not found, compute the inverse using solve()
+
+## This function uses lexical scoping
+## It returns a list of four functions set, get, setinverse and getinverse
 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -17,6 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
         )
 }
 
+## This function calculates the inverse of the matrix but first checks the cache
 
 cacheSolve <- function(x, ...) {
         i <- x$getinverse()
